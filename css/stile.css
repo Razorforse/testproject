@@ -28,7 +28,7 @@ p {
 .header {	
 	display: flex;
 	justify-content:center;
-	align-items:center;
+	align-items:flex-start;
 	background:url("../img/header.png") no-repeat; 
 	background-size:100% 114px;
 	width: 100%;
@@ -42,16 +42,16 @@ p {
 }
 .header__logo {
 	margin-left:138px;
+	margin-top: 7px;
 }
 .header__logo p{
 	margin:0;
 }
 .header__call { 
-	margin-left: auto;
-	margin-right:20px;
+	margin: 39px 45px  0 auto;
 }
 .header__call p { 
-	margin:5px 0;
+	margin:0;
 }
 .telephone {
 	font-size: 26px;
@@ -61,11 +61,25 @@ p {
 	margin-right:5px;
 }
 .header__button {
-	background-color:#F3BA0BFF;
+	display: flex;
+	background-color:#efbf2d;
 	border: none;
 	width: 216px;
 	height: 36px;
 	font-family:"GloberBold";
 	font-size: 16px;
 	margin-right: 127px;
+	margin-top: 40px;
+	overflow: hidden;
+	padding: 0;
+}
+.header__button:before,
+.header__button:after {
+	content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+} 
+.header__button div {
+	margin: 0 20px;
 }
