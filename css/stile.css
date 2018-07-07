@@ -25,6 +25,27 @@ body {
 p {
 	font-size:14px;
 }
+a {
+	font-size: 14px;
+	text-decoration: none;
+}
+button {
+	display: flex;
+	background-color:#efbf2d;
+	border: none;
+	width: 216px;
+	height: 36px;
+	font-family:"GloberBold";
+	font-size: 16px;
+	padding: 0;
+}
+button:before,
+button:after {
+	content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #000;
+    margin: auto;
+}
 .header {	
 	display: flex;
 	justify-content:center;
@@ -41,14 +62,14 @@ p {
 	height:480px;
 }
 .header__logo {
-	margin-left:138px;
+	margin-left:141px;
 	margin-top: 7px;
 }
 .header__logo p{
 	margin:0;
 }
 .header__call { 
-	margin: 39px 45px  0 auto;
+	margin: 34px 45px  0 auto;
 }
 .header__call p { 
 	margin:0;
@@ -61,25 +82,104 @@ p {
 	margin-right:5px;
 }
 .header__button {
-	display: flex;
-	background-color:#efbf2d;
-	border: none;
-	width: 216px;
-	height: 36px;
-	font-family:"GloberBold";
-	font-size: 16px;
 	margin-right: 127px;
 	margin-top: 40px;
-	overflow: hidden;
-	padding: 0;
-}
-.header__button:before,
-.header__button:after {
-	content: "";
-    flex: 1 1;
-    border-bottom: 2px solid #000;
-    margin: auto;
 } 
 .header__button div {
 	margin: 0 20px;
+}
+.navbar {	
+	position:absolute;
+	background-color:#2e2d2e;
+	height: 45px;	
+  	right: 120px;
+  	left: 119px;
+  	top:91px;
+}
+.navbar__items {
+	display: flex;
+	justify-content:space-between;
+	align-content: center;
+	padding: 0;
+}
+.navbar__items li {
+	padding: 0 15px;
+	list-style-type: none;
+}
+.navbar__items a {
+	color: #fff;
+}
+.main__baner {
+	display: flex;
+	background-color: #5da1bb;
+	color: #fff;
+	position: absolute;
+	height: 58px;	
+  	right: 120px;
+  	left: 119px;
+  	top:136px;	
+
+}
+.main__baner h1 {
+	align-self: center;
+	font-size: 30px;
+	margin: 0;
+	padding-left: 21px;
+}
+#navbar__main {
+	padding-left: 24px;
+}
+.main__info	{
+	height: 368px;
+	width: 658px;
+	background-color: #fff;
+	position: absolute;	
+  	right: 120px;
+  	left: 119px;
+  	top:194px;
+  	color: #93c0d2;
+}
+.layer {
+	position: absolute;
+	bottom: 20px;
+}
+.main__info h2 {
+	margin: 0;
+	font-size: 26px;
+	padding-left: 24px;
+	padding-top: 20px;
+}
+.main__info h5 {
+	color: #000;
+	font-size: 16px;
+	margin: 11px 0 0 0;
+	padding-left: 24px;
+}
+.main__info section {
+	width: 600px;
+	margin: 0;
+	position: relative;
+	left:40px;
+	border-left: 1px solid #000;
+	
+
+}
+.main__info p {
+	color: #000;
+	padding-left: 5px;
+}
+.main__info__button {
+	margin: auto;
+
+}
+.main__info__button div {
+	margin: 0 20px;
+}
+.main__info__point {
+	display: block;
+	background-color: #efbf2d;
+	width: 25px;
+	height: 25px;
+	border-radius:50%;
+	margin:5px auto 0 auto;
 }
