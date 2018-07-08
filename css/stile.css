@@ -30,6 +30,7 @@ a {
 	text-decoration: none;
 }
 button {
+	color: #2e2d2e;
 	display: flex;
 	background-color:#efbf2d;
 	border: none;
@@ -38,13 +39,28 @@ button {
 	font-family:"GloberBold";
 	font-size: 16px;
 	padding: 0;
+	transition:  1s linear;
+	transition-property:color, background-color, font-family;
+	cursor: pointer;
 }
 button:before,
 button:after {
 	content: "";
     flex: 1 1;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #2e2d2e;
     margin: auto;
+}
+button:after {
+	margin-left:10px;
+}
+button:before {
+	margin-right:10px;
+}
+button:hover,
+button:focus {
+	background-color:#2e2d2e;
+	color: #fff;
+	font-family:"GloberRegular";
 }
 .header {	
 	display: flex;
@@ -85,9 +101,6 @@ button:after {
 	margin-right: 127px;
 	margin-top: 40px;
 } 
-.header__button div {
-	margin: 0 20px;
-}
 .navbar {	
 	position:absolute;
 	background-color:#2e2d2e;
@@ -103,12 +116,13 @@ button:after {
 	padding: 0;
 }
 .navbar__items li {
-	padding: 0 15px;
+	padding-right:15px;
 	list-style-type: none;
 }
 .navbar__items a {
 	color: #fff;
 }
+
 .main__baner {
 	display: flex;
 	background-color: #5da1bb;
@@ -127,7 +141,14 @@ button:after {
 	padding-left: 21px;
 }
 #navbar__main {
-	padding-left: 24px;
+	bottom: 16px;
+	position: relative;
+	height: 46px;
+	width: 97px;
+}
+#navbar__main a:hover,
+#navbar__main a:focus {
+	color: #fff;
 }
 .main__info	{
 	height: 368px;
@@ -141,7 +162,7 @@ button:after {
 }
 .layer {
 	position: absolute;
-	bottom: 20px;
+	top: 500px;
 }
 .main__info h2 {
 	margin: 0;
@@ -168,18 +189,28 @@ button:after {
 	color: #000;
 	padding-left: 5px;
 }
+.main__info__bar {
+	width: 216px;
+	margin: auto;
+}
+.main__info__bar .button {
+	transition:  1s linear;
+	transition-property:color, background-color, font-family;
+}
+.main__info__bar:hover .button,
+.main__info__bar:focus .button {
+	background-color:#2e2d2e;
+	color: #fff;
+}	
 .main__info__button {
 	margin: auto;
-
-}
-.main__info__button div {
-	margin: 0 20px;
 }
 .main__info__point {
-	display: block;
 	background-color: #efbf2d;
 	width: 25px;
 	height: 25px;
 	border-radius:50%;
 	margin:5px auto 0 auto;
+	font-size: 10px;
+	font-weight: 900;
 }
